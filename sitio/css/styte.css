@@ -1,0 +1,247 @@
+/*inicio de HEADER GENERAL*/
+header,nav{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0px;
+}
+a{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Old Standard TT', serif;
+    font-weight: bold;
+    color: #413f40;
+}
+li{
+    padding: 5px;
+    margin: auto;
+}
+ul{
+    background-color: white;
+    list-style: none;
+    display: flex;
+    flex: row;
+}
+h2.header_general{
+    font-size: 50px;
+    font-family: 'Old Standard TT', serif;
+    padding: 20px;
+    margin: 20px;
+    color: #413f40;
+}
+img.logo_principal{
+    width: 150px;
+    height: 30px;
+    margin: auto;
+}
+/*fin de HEADER GENERAL*/
+/*inicio de INDEX*/
+main{
+    background-color: #161920;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+img.imagen_index{
+    width: 1483px;
+}
+h4.texto_index{
+    color: whitesmoke;
+    font-size: 35px;
+    font-family: 'Old Standard TT', serif;
+    text-align: center;
+}
+footer{
+    background-color: #161920;
+    display: flex;
+    flex-direction: column;
+}
+a.link_footer,p.texto_footer,h6{
+    color: whitesmoke;
+    font-size: 15px;
+    font-family: 'Old Standard TT', serif;
+}
+/*fin de index*/
+/*inicio de PRODUCTOS*/
+main.main_productos{
+    background-color: white;
+}
+div.contenedor_producto{
+    display: flex;
+    flex-direction: row;
+}
+h3.titulo_beauty{
+    font-family: 'Old Standard TT', serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #2d4f59;
+}
+p.descripcion_beauty{
+    font-family: 'Old Standard TT', serif;
+    font-size: 25px;
+    color: #2d4f59;
+}
+h3.titulo_peak{
+    font-family: 'Old Standard TT', serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #7a95b7;
+}
+p.descripcion_peak{
+    font-family: 'Old Standard TT', serif;
+    font-size: 25px;
+    color: #7a95b7;
+}
+h3.titulo_smooth{
+    font-family: 'Old Standard TT', serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #ca6e69;
+}
+p.descripcion_smooth{
+    font-family: 'Old Standard TT', serif;
+    font-size: 25px;
+    color: #ca6e69;
+}
+footer.footer_productos{
+    background-color: white;
+}
+footer.footer_productos p, footer.footer_productos h6{
+    font-family: 'Old Standard TT', serif;
+    font-size: 15px;
+    color:black;
+}
+footer.footer_productos a{
+    font-family: 'Old Standard TT', serif;
+    font-weight: bold;
+    font-size: 15px;
+    color:  black;
+}
+/*fin de PRODUCTOS*/
+/*inicio de NOSOTROS*/
+main.main_nosotros{
+    background-color: #cbe7f5;
+}
+main.main_nosotros p{
+    font-family: 'Old Standard TT', serif;
+    font-size: 20px;
+    color: #274136;
+}
+div.nosotros_1, div.nosotros_2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+main.main_nosotros div.nosotros_2 a{
+    color: #e16da1;
+}
+main.main_nosotros div.nosotros_2 iframe{
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    margin: 10px;
+}
+footer.footer_nosotros{
+    background-color: #cbe7f5;
+}
+footer.footer_nosotros p, footer.footer_nosotros h6{
+    font-family: 'Old Standard TT', serif;
+    font-size: 15px;
+    color: #e16da1;
+}
+footer.footer_nosotros a{
+    font-family: 'Old Standard TT', serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #e16da1;
+}
+/*fin de NOSOTROS*/
+/*inicio de PREGUNTAS*/
+main.main_preguntas{
+    background-color: white;
+}
+div.titulos, div.imagenes, div.respuestas,div.formulario{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    align-items: center;
+}
+main.main_preguntas div.titulos h3{
+    font-family: 'Old Standard TT', serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+main.main_preguntas div.titulos h3.pregunta_1{
+    margin-right: 190px;
+}
+main.main_preguntas div.titulos h3.pregunta_2{
+    margin-right: 50px;
+}
+main.main_preguntas div.imagenes img{
+    margin-right: 110px;
+}
+main.main_preguntas div.respuestas p{
+    font-family: 'Old Standard TT', serif;
+    font-size: 15px;
+    width: 350px;
+    margin-right: 120px;
+
+}
+main.main_preguntas div.formulario p{
+    font-family: 'Old Standard TT', serif;
+    font-size: 30px;
+    font-weight: bold;
+    width: 690px;
+    margin-right: 250px;
+}
+footer.footer_preguntas{
+    background-color: white;
+}
+footer.footer_preguntas p,footer.footer_preguntas h6{
+    font-family: 'Old Standard TT', serif;
+    font-size: 15px;
+    color: black;
+}
+footer.footer_preguntas a{
+    font-family: 'Old Standard TT', serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+}
+/*fin de PREGUNTAS*/
+/*inicio de SHOP*/
+main.main_shop{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+main.main_shop div.shop_1, main.main_shop div.shop_2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+main.main_shop p{
+    font-family: 'Old Standard TT', serif;
+    font-size: 30px;
+}
+main.main_shop a{
+    font-family: 'Old Standard TT', serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: lightseagreen;
+}
+footer.footer_shop{
+    background-color: white;
+}
+footer.footer_shop p, footer.footer_shop h6{
+    font-family: 'Old Standard TT', serif;
+    font-size: 15px;
+    color: black;
+}footer.footer_shop a{
+    font-family: 'Old Standard TT', serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+}
+/*fin de SHOP*/
