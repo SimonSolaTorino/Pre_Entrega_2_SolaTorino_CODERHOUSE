@@ -1,0 +1,67 @@
+/*INICIO de HEADER*/
+/*vista MOBILE*/
+@media (max-widht : 480px){
+    .body_index{
+        display: grid;
+        grid-template-areas:
+        "logo_index h2_index"
+        "nav_index nav_index"
+        "encabezado_index encabezado_index"
+        "imagen_index imagen_index"
+        "footer_index footer_index"
+    }
+    
+    .logo_index{
+        grid-area: logo_index;
+        position: sticky;
+        top: 0px;
+
+    }
+
+    .h2_index{
+        grid-area: h2_index;
+        position: sticky;
+        top: 0px;
+        font-size: 50px;
+        font-family: 'Old Standard TT', serif;;
+        color: #413f40;
+    }
+
+    .nav_index{
+        grid-area: nav_index;
+        background-color: white;
+        position: sticky;
+        top: 0px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .texto_index{
+        grid-area: encabezado_index;
+        color: whitesmoke;
+        font-size: 35px;
+        font-family: 'Old Standard TT', serif;
+        text-align: center;
+    }
+
+    .imagen_index{
+        grid-area: imagen_index;
+    }
+
+    .footer_index{
+        grid-area: footer_index;
+        background-color: #161920;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    a{
+        text-decoration: none;
+        font-size: 25px;
+        font-family: 'Old Standard TT', serif;
+        font-weight: bold;
+        color: #413f40;
+    }
+
+}
