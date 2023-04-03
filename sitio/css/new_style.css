@@ -1,67 +1,179 @@
-/*INICIO de HEADER*/
-/*vista MOBILE*/
-@media (max-widht : 480px){
+/*GENERAL*/
+a{
+    text-decoration: none;
+    font-size: 100%;
+    font-family: 'Old Standard TT', serif;
+    font-weight: bold;
+    color: #413f40;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding-left: 15px;
+}
+ul{
+    list-style-type: none;
+    background-color: white;
+}
+/*DESKTOP*/
+@media (min-width:1023px){
+    /*incio INDEX*/
     .body_index{
+        background-color: #161920;
+        margin: 0px;
+    }
+    .grid_index{
         display: grid;
-        grid-template-areas:
-        "logo_index h2_index"
-        "nav_index nav_index"
-        "encabezado_index encabezado_index"
-        "imagen_index imagen_index"
-        "footer_index footer_index"
+        grid-template-areas: 
+        "header_index"
+        "main_index"
+        "footer_index";
+        grid-template-columns: 99.5%;
+        grid-template-rows: auto auto auto;
     }
-    
-    .logo_index{
-        grid-area: logo_index;
-        position: sticky;
-        top: 0px;
-
-    }
-
-    .h2_index{
-        grid-area: h2_index;
-        position: sticky;
-        top: 0px;
-        font-size: 50px;
-        font-family: 'Old Standard TT', serif;;
-        color: #413f40;
-    }
-
-    .nav_index{
-        grid-area: nav_index;
+    .header_index{
         background-color: white;
-        position: sticky;
-        top: 0px;
+        grid-area: header_index;
         display: flex;
         flex-direction: row;
+        align-items: center;
+        position: sticky;
+        top: 0;
     }
+    .main_index{
+        grid-area: main_index;
+        background-color: #161920;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_index{
+        grid-area: footer_index;
+        background-color: #161920;
+        display: flex;
+        flex-direction: column;
 
-    .texto_index{
-        grid-area: encabezado_index;
+    }
+    .titulo_index{
         color: whitesmoke;
         font-size: 35px;
         font-family: 'Old Standard TT', serif;
         text-align: center;
     }
+    .titulo_header{
+        font-size: 50px;
+        font-family: 'Old Standard TT', serif;
+        margin: 0px;
+        color: #413f40;
+        padding:0px;
 
-    .imagen_index{
-        grid-area: imagen_index;
     }
+    .logo_header{
+        height: 50%;
+        padding-right: 20px;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        margin: 3px;
+        padding: 3px;
+        align-items: center;
+    }
+    .imagen_index{
+        object-fit: cover;
+        width:100%;
+        height:100%;
+    }
+    .texto_footer,.parrafo_footer,.enlace_footer{
+        color: whitesmoke;
+        font-size: 15px;
+        font-family: 'Old Standard TT', serif;
+    }
+    /*fin INDEX*/
 
+}
+/*PHONE*/
+@media (max-width: 1023px){
+    /*inicio INDEX*/
+    .grid_index{
+        display: grid;
+        grid-template-areas: 
+        "header_index"
+        "main_index"
+        "footer_index";
+        grid-template-columns: 99%;
+        grid-template-rows: auto auto auto;
+    }
+    .header_index{
+        grid-area: header_index;
+        display: grid;
+        grid-template-areas:
+        "logo_h h2_h"
+        "nav_h nav_h";
+        grid-template-columns:50% 50%;
+        grid-template-rows: auto auto;
+        background-color: white;
+        position: sticky;
+        top: 0;
+    }
+    .logo_header{
+        grid-area: logo_h;
+        height: 50%;
+        padding-right: 5px;
+        justify-self: center;
+    }
+    .titulo_header{
+        grid-area: h2_h;
+        font-size: 50px;
+        font-family: 'Old Standard TT', serif;
+        margin: 0px;
+        color: #413f40;
+        padding:0px;
+        text-align: center;
+    }
+    .nav_index{
+        grid-area: nav_h;
+        margin-top: 10px;
+        justify-self: center;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        margin: 3px;
+        padding: 0;
+        align-items: center;
+    }
+    .links_index{
+        text-decoration: none;
+        font-size: 100%;
+        font-family: 'Old Standard TT', serif;
+        font-weight: bold;
+        color: #413f40;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        padding-left: 0;
+    }
+    .main_index{
+        grid-area: main_index;
+        background-color: #161920;
+        display: flex;
+        flex-direction: column;
+    }
+    .titulo_index{
+        color: whitesmoke;
+        font-size: 35px;
+        font-family: 'Old Standard TT', serif;
+        text-align: center;
+    }
     .footer_index{
         grid-area: footer_index;
         background-color: #161920;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
     }
-
-    a{
-        text-decoration: none;
-        font-size: 25px;
+    .texto_footer,.parrafo_footer,.enlace_footer{
+        color: whitesmoke;
+        font-size: 15px;
         font-family: 'Old Standard TT', serif;
-        font-weight: bold;
-        color: #413f40;
     }
-
+    /*fin INDEX*/
 }
