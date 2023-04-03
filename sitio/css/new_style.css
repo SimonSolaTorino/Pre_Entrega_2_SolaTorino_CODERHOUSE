@@ -147,13 +147,97 @@ ul{
     /*fin PRODUCTOS*/
     /*===============================================================*/
     /*inicio NOSTORS*/
+    .grid_nosotros{
+        display: grid;
+        grid-template-areas: 
+        "header_nos"
+        "main_nos"
+        "footer_nos";
+        grid-template-columns: 99.5%;
+        grid-template-rows: auto auto auto;
+    }
+    .header_nosotros{
+        background-color: white;
+        grid-area: header_nos;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: sticky;
+        top: 0;
+    }
+    .main_nosotros{
+        grid-area: main_nos;
+        background-color: #cbe7f5;
+        display: grid;
+        grid-template-areas: 
+        "img_nos p_nos_1"
+        "p_nos_2 i_fr_nos";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+    }
+    .imagen_laboratorio{
+        grid-area: img_nos;
+        object-fit: cover;
+        width:100%;
+        height:100%;
+    }
+    .parrafo_nosotros_1{grid-area: p_nos_1;}
+    .parrafo_nosotros_2{grid-area: p_nos_2;}
+    .location{
+        grid-area: i_fr_nos;
+        width: 450px;
+        height: 375px;
+        justify-self: center;
+    }
+    .parrafo_nosotros_1,.parrafo_nosotros_2{
+        margin-top: 20px;
+        font-family: 'Old Standard TT', serif;
+        font-size: 19px;
+        color: #274136;
+    }
+    .link_main_nosotros{
+        font-family: 'Old Standard TT', serif;
+        font-size: 45px;
+        color: #e16da1;
+        font-style: italic;
+    }
+    .footer_nosotros{
+        grid-area: footer_nos;
+        background-color: #cbe7f5;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .titulo_header{
+        font-size: 50px;
+        font-family: 'Old Standard TT', serif;
+        margin: 0px;
+        color: #413f40;
+        padding:0px;
+
+    }
+    .logo_header{
+        height: 50%;
+        padding-right: 20px;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        margin: 3px;
+        padding: 3px;
+        align-items: center;
+    }
+    .texto_footer_nosotros,.parrafo_footer_nosotros,.enlace_footer_nosotros{
+        color: #e16da1;
+        font-size: 13px;
+        font-family: 'Old Standard TT', serif;
+    }
     /*fin NOSOTROS*/
     /*===============================================================*/
-
-
 }
 /*PHONE*/
 @media (max-width: 1023px){
+    /*===============================================================*/
     /*inicio INDEX*/
     .grid_index{
         display: grid;
@@ -238,6 +322,7 @@ ul{
         font-family: 'Old Standard TT', serif;
     }
     /*fin INDEX*/
+    /*===============================================================*/
     /*inicio PRODUCTOS*/
     .grid_productos{
         display: grid;
@@ -299,7 +384,76 @@ ul{
         font-size: 10px;
         font-family: 'Old Standard TT', serif;
     }
-
-
     /*fin PRODUCTOS*/
+    /*===============================================================*/
+    /*inicio NOSOTROS*/
+    .grid_nosotros{
+        display: grid;
+        grid-template-areas: 
+        "header_nos"
+        "main_nos"
+        "footer_nos";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+    }
+    .header_nosotros{
+        grid-area: header_nos;
+        display: grid;
+        grid-template-areas:
+        "logo_h h2_h"
+        "nav_h nav_h";
+        grid-template-columns:50% 50%;
+        grid-template-rows: auto auto;
+        background-color: white;
+        position: sticky;
+        top: 0;
+    }
+    .main_nosotros{
+        grid-area: main_nos;
+        background-color: #cbe7f5;
+        display: grid;
+        grid-template-areas:
+        "img_nos img_nos"
+        "p_nos_1 p_nos_1"
+        "p_nos_2 i_fr_nos";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto;
+    }
+    .imagen_laboratorio{
+        grid-area: img_nos;
+        justify-self: center;
+    }
+    .parrafo_nosotros_1{grid-area: p_nos_1;}
+    .parrafo_nosotros_2{grid-area: p_nos_2;}
+    .parrafo_nosotros_2,.parrafo_nosotros_1{
+        justify-self: center;
+        font-family: 'Old Standard TT', serif;
+        font-size: 19px;
+        color: #274136;
+    }
+    .link_main_nosotros{
+        color: #e16da1;
+        font-size: 40px;
+        font-family: 'Old Standard TT', serif;
+        font-style: italic;
+    }
+    .location{
+        grid-area: i_fr_nos;
+        margin-top: 50px;
+        width: 250px;
+        height: 200px;
+        justify-self: center;
+    
+    }
+    .footer_nosotros{
+        background-color: #cbe7f5;
+        grid-area: footer_nos;
+    }
+    .texto_footer_nosotros,.parrafo_footer_nosotros,.enlace_footer_nosotros{
+        color: #e16da1;
+        font-size: 10px;
+        font-family: 'Old Standard TT', serif;
+    }
+    /*fin NOSOTROS*/
+    /*===============================================================*/
 }
