@@ -208,31 +208,131 @@ ul{
         flex-direction: column;
 
     }
-    .titulo_header{
-        font-size: 50px;
-        font-family: 'Old Standard TT', serif;
-        margin: 0px;
-        color: #413f40;
-        padding:0px;
-
-    }
-    .logo_header{
-        height: 50%;
-        padding-right: 20px;
-    }
-    ul{
-        display: flex;
-        flex-direction: row;
-        margin: 3px;
-        padding: 3px;
-        align-items: center;
-    }
     .texto_footer_nosotros,.parrafo_footer_nosotros,.enlace_footer_nosotros{
         color: #e16da1;
         font-size: 13px;
         font-family: 'Old Standard TT', serif;
     }
     /*fin NOSOTROS*/
+    /*===============================================================*/
+    /*inicio PREGUNTAS*/
+    .grid_preguntas{
+        display: grid;
+        grid-template-areas: 
+        "header_preguntas"
+        "main_preguntas"
+        "footer_preguntas";
+        grid-template-columns: 99.5%;
+        grid-template-rows: auto auto auto;
+    }
+    .header_preguntas{
+        background-color: white;
+        grid-area: header_preguntas;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: sticky;
+        top: 0;
+    }
+    .main_preguntas{
+        grid-area: main_preguntas;
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor_main_preguntas_respuestas{
+        display: grid;
+        grid-template-areas:
+        "h3_preg_1 h3_preg_2 h3_preg_3"
+        "img_preg_1 img_preg_2 img_preg_3"
+        "p_preg_1 p_preg_2 p_preg_3";
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: auto auto auto;
+    }
+    .pregunta_1{grid-area: h3_preg_1;}
+    .pregunta_2{grid-area: h3_preg_2;}
+    .pregunta_3{grid-area: h3_preg_3;}
+    .imagen_1{grid-area: img_preg_1;}
+    .imagen_2{grid-area:  img_preg_2;}
+    .imagen_3{grid-area: img_preg_3;}
+    .respuesta_1{grid-area: p_preg_1;}
+    .respuesta_2{grid-area: p_preg_2;}
+    .respuesta_3{grid-area: p_preg_3;}
+    .pregunta_1,.pregunta_2,.pregunta_3{
+        font-family: 'Old Standard TT', serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: #491f53;
+        margin-bottom: 10px;
+        margin-right: 130px;
+        align-self: center;
+        text-decoration-line: underline;
+    }
+    .respuesta_1,.respuesta_2,.respuesta_3{
+        font-family: 'Old Standard TT', serif;
+        font-weight: bold;
+        font-size: 17px;
+        color: #491f53;
+        margin-top: 10px;
+        margin-right: 145px;
+    }
+    .contenedor_main_formulario{
+        display: grid;
+        grid-template-areas: 
+        "pregunta_duda"
+        "formulario";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+    }
+    .mas_dudas{
+        grid-area: pregunta_duda;
+        font-family: 'Old Standard TT', serif;
+        font-weight: bold;
+        font-size: 17px;
+        color: #491f53;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .formulario_main{
+        grid-area: formulario;
+        display: flex;
+        flex-direction: row;
+    }
+    .contenedor_campos_1{
+        padding-left: 30%;
+        padding-right: 2%;
+
+    }
+    .entry_box{
+        height: 30px;
+        margin-bottom: 15px;
+    }
+    .etiqueta_label{
+        font-family: 'Old Standard TT', serif;
+        font-size: 15px;
+        color: gray;
+    }
+    .coment_box{
+        height: 125px;
+        width: 400px;
+        margin-bottom: 10px;
+    }
+    .botones{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .footer_preguntas{
+        grid-area: footer_preguntas;
+        display: flex;
+        flex-direction: column;
+    }
+    .texto_footer_preguntas,.parrafo_footer_preguntas,.enlace_footer_preguntas{
+        color: #491f53;
+        font-size: 13px;
+        font-family: 'Old Standard TT', serif;
+    }
+    /*fin PREGUNTAS*/
     /*===============================================================*/
 }
 /*PHONE*/
@@ -259,6 +359,7 @@ ul{
         background-color: white;
         position: sticky;
         top: 0;
+        margin-top: 25px;
     }
     .logo_header{
         grid-area: logo_h;
@@ -344,6 +445,7 @@ ul{
         background-color: white;
         position: sticky;
         top: 0;
+        margin-top: 25px;
     }
     .main_productos{
         grid-area: main_prod;
@@ -407,6 +509,7 @@ ul{
         background-color: white;
         position: sticky;
         top: 0;
+        margin-top: 25px;
     }
     .main_nosotros{
         grid-area: main_nos;
@@ -455,5 +558,133 @@ ul{
         font-family: 'Old Standard TT', serif;
     }
     /*fin NOSOTROS*/
+    /*===============================================================*/
+    /*inicio PREGUNTAS*/
+    .grid_preguntas{
+        display: grid;
+        grid-template-areas: 
+        "header_preg"
+        "main_preg"
+        "footer_preg";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+    }
+    .header_preguntas{
+        grid-area: header_preg;
+        display: grid;
+        grid-template-areas:
+        "logo_h h2_h"
+        "nav_h nav_h";
+        grid-template-columns:50% 50%;
+        grid-template-rows: auto auto;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        margin-top: 25px;
+    }
+    .main_preguntas{
+        grid-area: main_preg;
+        display: grid;
+        grid-template-areas: 
+        "cont_preg_1"
+        "cont_preg_2";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+    }
+    .contenedor_main_preguntas_respuestas{
+        grid-area: cont_preg_1;
+        display: grid;
+        grid-template-areas:
+        "h_preg_1"
+        "img_preg_1"
+        "p_preg_1"
+        "h_preg_2"
+        "img_preg_2"
+        "p_preg_2"
+        "h_preg_3"
+        "img_preg_3"
+        "p_preg_3";
+    }
+    .pregunta_1{grid-area: h_preg_1;}
+    .imagen_1{grid-area: img_preg_1;}
+    .respuesta_1{grid-area: p_preg_1;}
+    .pregunta_2{grid-area: h_preg_2;}
+    .imagen_2{grid-area: img_preg_2;}
+    .respuesta_2{grid-area: p_preg_2;}
+    .pregunta_3{grid-area: h_preg_3;}
+    .imagen_3{grid-area: img_preg_3;}
+    .respuesta_3{grid-area: p_preg_3;}
+    .imagen_1,.imagen_2,.imagen_3{
+        padding-left: 35%;
+    }
+    .pregunta_1,.pregunta_2,.pregunta_3{
+        font-family: 'Old Standard TT', serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: #491f53;
+        margin-bottom: 10px;
+        width: 350px;
+        padding-left: 35%;
+        text-decoration-line: underline;
+    }
+    .respuesta_1,.respuesta_2,.respuesta_3{
+        font-family: 'Old Standard TT', serif;
+        font-size: 23px;
+        color: #491f53;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        width: 35%;
+        padding-left: 35%;
+    }
+    .contenedor_main_formulario{
+        grid-area: cont_preg_2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mas_dudas{
+        font-family: 'Old Standard TT', serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: #491f53;
+        padding-left: 10%;
+        width: 80%;
+    }
+    .formulario_main{
+        display: flex;
+        flex-direction: row;
+    }
+    .contenedor_campos_1{
+        display: flex;
+        flex-direction: column;
+        margin-right: 2px;
+        padding-right: 5%;
+    }
+    .entry_box{
+        height: 20px;
+    }
+    .etiqueta_label{
+        font-family: 'Old Standard TT', serif;
+        font-size: 15px;
+        color: gray
+    }
+    .coment_box{
+        width: 450px;
+        height: 110px;
+    }
+    .botones{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .footer_productos{
+        grid-area: footer_preg;
+    }
+    .texto_footer_preguntas,.parrafo_footer_preguntas,.enlace_footer_preguntas{
+        color:#491f53;
+        font-size: 10px;
+        font-family: 'Old Standard TT', serif;
+    }
+    /*fin PREGUNTAS*/
     /*===============================================================*/
 }
