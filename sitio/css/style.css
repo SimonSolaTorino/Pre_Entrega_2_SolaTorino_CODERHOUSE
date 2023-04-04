@@ -1,0 +1,826 @@
+/*GENERAL*/
+a{
+    text-decoration: none;
+    font-size: 100%;
+    font-family: 'Old Standard TT', serif;
+    font-weight: bold;
+    color: #413f40;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding-left: 15px;
+}
+ul{
+    list-style-type: none;
+    background-color: white;
+}
+/*===============================================================*/
+/*DESKTOP*/
+@media (min-width:1023px){
+    /*===============================================================*/
+    /*incio INDEX*/
+    .grid_index{
+        display: grid;
+        grid-template-areas: 
+        "header_index"
+        "main_index"
+        "footer_index";
+        grid-template-columns: 99.5%;
+        grid-template-rows: auto auto auto;
+    }
+    .header_index{
+        background-color: white;
+        grid-area: header_index;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: sticky;
+        top: 0;
+    }
+    .main_index{
+        grid-area: main_index;
+        background-color: #161920;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_index{
+        grid-area: footer_index;
+        background-color: #161920;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .titulo_index{
+        color: whitesmoke;
+        font-size: 35px;
+        font-family: 'Old Standard TT', serif;
+        text-align: center;
+    }
+    .titulo_header{
+        font-size: 50px;
+        font-family: 'Old Standard TT', serif;
+        margin: 0px;
+        color: #413f40;
+        padding:0px;
+
+    }
+    .logo_header{
+        height: 50%;
+        padding-right: 20px;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        margin: 3px;
+        padding: 3px;
+        align-items: center;
+    }
+    .imagen_index{
+        object-fit: cover;
+        width:100%;
+        height:100%;
+    }
+    .texto_footer,.parrafo_footer,.enlace_footer{
+        color: whitesmoke;
+        font-size: 15px;
+        font-family: 'Old Standard TT', serif;
+    }
+    /*fin INDEX*/
+    /*===============================================================*/
+    /*inicio PRODUCTOS*/
+    .grid_productos{
+        display: grid;
+        grid-template-areas: 
+        "header_prod"
+        "main_prod"
+        "footer_prod";
+        grid-template-columns: 98%;
+        grid-template-rows: auto auto auto;
+    }
+    .header_productos{
+        background-color: white;
+        grid-area: header_prod;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: sticky;
+        top: 0;
+    }
+    .main_productos{grid-area: main_prod;}
+    .footer_productos{
+        grid-area: footer_prod;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .contenedor_productos{
+        display: grid;
+        grid-template-areas: 
+        "imagen_1 descripcion_1"
+        "imagen_2 descripcion_2"
+        "imagen_3 descripcion_3";
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto auto auto;
+    }
+    .imagen_beauty{grid-area:imagen_1;}
+    .imagen_peak{grid-area:imagen_2;}
+    .imagen_smooth{grid-area:imagen_3;}
+    .contenedor_beauty{grid-area: descripcion_1;}
+    .contenedor_peak{grid-area: descripcion_2;}
+    .contenedor_smooth{grid-area:descripcion_3;}
+    .textos_main_productos{
+        font-family: 'Old Standard TT', serif;
+        font-size: 25px;
+        color: #491f53;}
+    .titulos_main_productos{
+        font-family: 'Old Standard TT', serif;
+        font-size: 50px;
+        font-weight: bold;
+        color: #491f53;
+    }
+    .texto_footer_productos,.parrafo_footer_productos,.enlace_footer_productos{
+        color: #491f53;
+        font-size: 15px;
+        font-family: 'Old Standard TT', serif;
+    }
+    /*fin PRODUCTOS*/
+    /*===============================================================*/
+    /*inicio NOSTORS*/
+    .grid_nosotros{
+        display: grid;
+        grid-template-areas: 
+        "header_nos"
+        "main_nos"
+        "footer_nos";
+        grid-template-columns: 99.5%;
+        grid-template-rows: auto auto auto;
+    }
+    .header_nosotros{
+        background-color: white;
+        grid-area: header_nos;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: sticky;
+        top: 0;
+    }
+    .main_nosotros{
+        grid-area: main_nos;
+        background-color: #cbe7f5;
+        display: grid;
+        grid-template-areas: 
+        "img_nos p_nos_1"
+        "p_nos_2 i_fr_nos";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+    }
+    .imagen_laboratorio{
+        grid-area: img_nos;
+        object-fit: cover;
+        width:100%;
+        height:100%;
+    }
+    .parrafo_nosotros_1{grid-area: p_nos_1;}
+    .parrafo_nosotros_2{grid-area: p_nos_2;}
+    .location{
+        grid-area: i_fr_nos;
+        width: 450px;
+        height: 375px;
+        justify-self: center;
+    }
+    .parrafo_nosotros_1,.parrafo_nosotros_2{
+        margin-top: 20px;
+        font-family: 'Old Standard TT', serif;
+        font-size: 19px;
+        color: #274136;
+    }
+    .link_main_nosotros{
+        font-family: 'Old Standard TT', serif;
+        font-size: 45px;
+        color: #e16da1;
+        font-style: italic;
+    }
+    .footer_nosotros{
+        grid-area: footer_nos;
+        background-color: #cbe7f5;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .texto_footer_nosotros,.parrafo_footer_nosotros,.enlace_footer_nosotros{
+        color: #e16da1;
+        font-size: 13px;
+        font-family: 'Old Standard TT', serif;
+    }
+    /*fin NOSOTROS*/
+    /*===============================================================*/
+    /*inicio PREGUNTAS*/
+    .grid_preguntas{
+        display: grid;
+        grid-template-areas: 
+        "header_preguntas"
+        "main_preguntas"
+        "footer_preguntas";
+        grid-template-columns: 99.5%;
+        grid-template-rows: auto auto auto;
+    }
+    .header_preguntas{
+        background-color: white;
+        grid-area: header_preguntas;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: sticky;
+        top: 0;
+    }
+    .main_preguntas{
+        grid-area: main_preguntas;
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor_main_preguntas_respuestas{
+        display: grid;
+        grid-template-areas:
+        "h3_preg_1 h3_preg_2 h3_preg_3"
+        "img_preg_1 img_preg_2 img_preg_3"
+        "p_preg_1 p_preg_2 p_preg_3";
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: auto auto auto;
+    }
+    .pregunta_1{grid-area: h3_preg_1;}
+    .pregunta_2{grid-area: h3_preg_2;}
+    .pregunta_3{grid-area: h3_preg_3;}
+    .imagen_1{grid-area: img_preg_1;}
+    .imagen_2{grid-area:  img_preg_2;}
+    .imagen_3{grid-area: img_preg_3;}
+    .respuesta_1{grid-area: p_preg_1;}
+    .respuesta_2{grid-area: p_preg_2;}
+    .respuesta_3{grid-area: p_preg_3;}
+    .pregunta_1,.pregunta_2,.pregunta_3{
+        font-family: 'Old Standard TT', serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: #491f53;
+        margin-bottom: 10px;
+        margin-right: 130px;
+        align-self: center;
+        text-decoration-line: underline;
+    }
+    .respuesta_1,.respuesta_2,.respuesta_3{
+        font-family: 'Old Standard TT', serif;
+        font-weight: bold;
+        font-size: 17px;
+        color: #491f53;
+        margin-top: 10px;
+        margin-right: 145px;
+    }
+    .contenedor_main_formulario{
+        display: grid;
+        grid-template-areas: 
+        "pregunta_duda"
+        "formulario";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+    }
+    .mas_dudas{
+        grid-area: pregunta_duda;
+        font-family: 'Old Standard TT', serif;
+        font-weight: bold;
+        font-size: 17px;
+        color: #491f53;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .formulario_main{
+        grid-area: formulario;
+        display: flex;
+        flex-direction: row;
+    }
+    .contenedor_campos_1{
+        padding-left: 30%;
+        padding-right: 2%;
+
+    }
+    .entry_box{
+        height: 30px;
+        margin-bottom: 15px;
+    }
+    .etiqueta_label{
+        font-family: 'Old Standard TT', serif;
+        font-size: 15px;
+        color: gray;
+    }
+    .coment_box{
+        height: 125px;
+        width: 400px;
+        margin-bottom: 10px;
+    }
+    .botones{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .footer_preguntas{
+        grid-area: footer_preguntas;
+        display: flex;
+        flex-direction: column;
+    }
+    .texto_footer_preguntas,.parrafo_footer_preguntas,.enlace_footer_preguntas{
+        color: #491f53;
+        font-size: 13px;
+        font-family: 'Old Standard TT', serif;
+    }
+    /*fin PREGUNTAS*/
+    /*===============================================================*/
+    /*inicio SHOP*/
+    .grid_shop{
+        display: grid;
+        grid-template-areas: 
+        "header_shop"
+        "main_shop"
+        "footer_shop";
+        grid-template-columns: 99.5%;
+        grid-template-rows: auto auto auto;
+    }
+    .header_shop{
+        background-color: white;
+        grid-area: header_shop;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: sticky;
+        top: 0;
+    }
+    .main_shop{
+        grid-area: main_shop;
+        display: grid;
+        grid-template-areas: 
+        "img_shop_1 div_shop_1"
+        "div_shop_2 img_shop_2";
+    }
+    .imagen_shop_1{grid-area: img_shop_1;}
+    .contenido_shop_1{
+        grid-area: div_shop_1;
+        display: flex;
+        flex-direction: column;
+    }
+    .imagen_shop_2{grid-area: img_shop_2;}
+    .contenido_shop_2{
+        grid-area: div_shop_2;
+        display: flex;
+        flex-direction: column;
+    }
+    .parrafos_shop{
+        font-family: 'Old Standard TT', serif;
+        font-weight: bold;
+        font-size: 30px;
+        color: #491f53;
+        padding-left: 10%;
+        padding-top: 10%;
+    }
+    .enlace_main_shop{
+        font-family: 'Old Standard TT', serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: #491f53;
+        font-style: italic;
+    }
+    .footer_shop{
+        grid-area: footer_shop;
+        display: flex;
+        flex-direction: column;
+    }
+    .texto_footer_shop,.parrafo_footer_shop,.enlace_footer_shop{
+        color: #491f53;
+        font-size: 13px;
+        font-family: 'Old Standard TT', serif;
+    }
+    /*fin SHOP*/
+    /*===============================================================*/
+}
+/*PHONE*/
+@media (max-width: 1023px){
+    /*===============================================================*/
+    /*inicio INDEX*/
+    .grid_index{
+        display: grid;
+        grid-template-areas: 
+        "header_index"
+        "main_index"
+        "footer_index";
+        grid-template-columns: 99%;
+        grid-template-rows: auto auto auto;
+    }
+    .header_index{
+        grid-area: header_index;
+        display: grid;
+        grid-template-areas:
+        "logo_h h2_h"
+        "nav_h nav_h";
+        grid-template-columns:50% 50%;
+        grid-template-rows: auto auto;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        margin-top: 25px;
+    }
+    .logo_header{
+        grid-area: logo_h;
+        height: 50%;
+        padding-right: 5px;
+        justify-self: center;
+    }
+    .titulo_header{
+        grid-area: h2_h;
+        font-size: 50px;
+        font-family: 'Old Standard TT', serif;
+        margin: 0px;
+        color: #413f40;
+        padding:0px;
+        text-align: center;
+    }
+    .nav_gral{
+        grid-area: nav_h;
+        margin-top: 10px;
+        justify-self: center;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        margin: 3px;
+        padding: 0;
+        align-items: center;
+    }
+    .links_gral{
+        text-decoration: none;
+        font-size: 100%;
+        font-family: 'Old Standard TT', serif;
+        font-weight: bold;
+        color: #413f40;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        padding-left: 0;
+    }
+    .main_index{
+        grid-area: main_index;
+        background-color: #161920;
+        display: flex;
+        flex-direction: column;
+    }
+    .titulo_index{
+        color: whitesmoke;
+        font-size: 35px;
+        font-family: 'Old Standard TT', serif;
+        text-align: center;
+    }
+    .footer_index{
+        grid-area: footer_index;
+        background-color: #161920;
+        display: flex;
+        flex-direction: column;
+    }
+    .texto_footer,.parrafo_footer,.enlace_footer{
+        color: whitesmoke;
+        font-size: 15px;
+        font-family: 'Old Standard TT', serif;
+    }
+    /*fin INDEX*/
+    /*===============================================================*/
+    /*inicio PRODUCTOS*/
+    .grid_productos{
+        display: grid;
+        grid-template-areas: 
+        "header_prod"
+        "main_prod"
+        "footer_prod";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+    }
+    .header_productos{
+        grid-area: header_prod;
+        display: grid;
+        grid-template-areas:
+        "logo_h h2_h"
+        "nav_h nav_h";
+        grid-template-columns:50% 50%;
+        grid-template-rows: auto auto;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        margin-top: 25px;
+    }
+    .main_productos{
+        grid-area: main_prod;
+    }
+    .footer_productos{
+        grid-area: footer_prod;
+    }
+    .contenedor_productos{
+        display: grid;
+        grid-template-areas:
+        "img_prod_1 div_prod_1"
+        "img_prod_2 div_prod_2"
+        "img_prod_3 div_prod_3";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto;
+    }
+    .imagen_beauty{grid-area:img_prod_1}
+    .imagen_peak{grid-area:img_prod_2}
+    .imagen_smooth{grid-area: img_prod_3;}
+    .contenedor_beauty{grid-area: div_prod_1;}
+    .contenedor_peak{grid-area: div_prod_2}
+    .contenedor_smooth{grid-area: div_prod_3}
+    .contenedor_beauty,.contenedor_peak,.contenedor_smooth{
+        margin-top: 35px;
+    }
+    .textos_main_productos{
+        font-family: 'Old Standard TT', serif;
+        font-size: 15px;
+        color: #491f53;}
+    .titulos_main_productos{
+        font-family: 'Old Standard TT', serif;
+        font-size: 35px;
+        font-weight: bold;
+        color: #491f53;
+    }
+    .texto_footer_productos,.parrafo_footer_productos,.enlace_footer_productos{
+        color: #491f53;
+        font-size: 10px;
+        font-family: 'Old Standard TT', serif;
+    }
+    /*fin PRODUCTOS*/
+    /*===============================================================*/
+    /*inicio NOSOTROS*/
+    .grid_nosotros{
+        display: grid;
+        grid-template-areas: 
+        "header_nos"
+        "main_nos"
+        "footer_nos";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+    }
+    .header_nosotros{
+        grid-area: header_nos;
+        display: grid;
+        grid-template-areas:
+        "logo_h h2_h"
+        "nav_h nav_h";
+        grid-template-columns:50% 50%;
+        grid-template-rows: auto auto;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        margin-top: 25px;
+    }
+    .main_nosotros{
+        grid-area: main_nos;
+        background-color: #cbe7f5;
+        display: grid;
+        grid-template-areas:
+        "img_nos img_nos"
+        "p_nos_1 p_nos_1"
+        "p_nos_2 i_fr_nos";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto;
+    }
+    .imagen_laboratorio{
+        grid-area: img_nos;
+        justify-self: center;
+    }
+    .parrafo_nosotros_1{grid-area: p_nos_1;}
+    .parrafo_nosotros_2{grid-area: p_nos_2;}
+    .parrafo_nosotros_2,.parrafo_nosotros_1{
+        justify-self: center;
+        font-family: 'Old Standard TT', serif;
+        font-size: 19px;
+        color: #274136;
+    }
+    .link_main_nosotros{
+        color: #e16da1;
+        font-size: 40px;
+        font-family: 'Old Standard TT', serif;
+        font-style: italic;
+    }
+    .location{
+        grid-area: i_fr_nos;
+        margin-top: 50px;
+        width: 250px;
+        height: 200px;
+        justify-self: center;
+    
+    }
+    .footer_nosotros{
+        background-color: #cbe7f5;
+        grid-area: footer_nos;
+    }
+    .texto_footer_nosotros,.parrafo_footer_nosotros,.enlace_footer_nosotros{
+        color: #e16da1;
+        font-size: 10px;
+        font-family: 'Old Standard TT', serif;
+    }
+    /*fin NOSOTROS*/
+    /*===============================================================*/
+    /*inicio PREGUNTAS*/
+    .grid_preguntas{
+        display: grid;
+        grid-template-areas: 
+        "header_preg"
+        "main_preg"
+        "footer_preg";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+    }
+    .header_preguntas{
+        grid-area: header_preg;
+        display: grid;
+        grid-template-areas:
+        "logo_h h2_h"
+        "nav_h nav_h";
+        grid-template-columns:50% 50%;
+        grid-template-rows: auto auto;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        margin-top: 25px;
+    }
+    .main_preguntas{
+        grid-area: main_preg;
+        display: grid;
+        grid-template-areas: 
+        "cont_preg_1"
+        "cont_preg_2";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+    }
+    .contenedor_main_preguntas_respuestas{
+        grid-area: cont_preg_1;
+        display: grid;
+        grid-template-areas:
+        "h_preg_1"
+        "img_preg_1"
+        "p_preg_1"
+        "h_preg_2"
+        "img_preg_2"
+        "p_preg_2"
+        "h_preg_3"
+        "img_preg_3"
+        "p_preg_3";
+    }
+    .pregunta_1{grid-area: h_preg_1;}
+    .imagen_1{grid-area: img_preg_1;}
+    .respuesta_1{grid-area: p_preg_1;}
+    .pregunta_2{grid-area: h_preg_2;}
+    .imagen_2{grid-area: img_preg_2;}
+    .respuesta_2{grid-area: p_preg_2;}
+    .pregunta_3{grid-area: h_preg_3;}
+    .imagen_3{grid-area: img_preg_3;}
+    .respuesta_3{grid-area: p_preg_3;}
+    .imagen_1,.imagen_2,.imagen_3{
+        padding-left: 35%;
+    }
+    .pregunta_1,.pregunta_2,.pregunta_3{
+        font-family: 'Old Standard TT', serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: #491f53;
+        margin-bottom: 10px;
+        width: 350px;
+        padding-left: 35%;
+        text-decoration-line: underline;
+    }
+    .respuesta_1,.respuesta_2,.respuesta_3{
+        font-family: 'Old Standard TT', serif;
+        font-size: 23px;
+        color: #491f53;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        width: 35%;
+        padding-left: 35%;
+    }
+    .contenedor_main_formulario{
+        grid-area: cont_preg_2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mas_dudas{
+        font-family: 'Old Standard TT', serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: #491f53;
+        padding-left: 10%;
+        width: 80%;
+    }
+    .formulario_main{
+        display: flex;
+        flex-direction: row;
+    }
+    .contenedor_campos_1{
+        display: flex;
+        flex-direction: column;
+        margin-right: 2px;
+        padding-right: 5%;
+    }
+    .entry_box{
+        height: 20px;
+    }
+    .etiqueta_label{
+        font-family: 'Old Standard TT', serif;
+        font-size: 15px;
+        color: gray
+    }
+    .coment_box{
+        width: 450px;
+        height: 110px;
+    }
+    .botones{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .footer_productos{
+        grid-area: footer_preg;
+    }
+    .texto_footer_preguntas,.parrafo_footer_preguntas,.enlace_footer_preguntas{
+        color:#491f53;
+        font-size: 10px;
+        font-family: 'Old Standard TT', serif;
+    }
+    /*fin PREGUNTAS*/
+    /*===============================================================*/
+    /*inicio SHOP*/
+    .grid_shop{
+        display: grid;
+        grid-template-areas: 
+        "header_shop"
+        "main_shop"
+        "footer_shop";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+    }
+    .header_shop{
+        grid-area: header_shop;
+        display: grid;
+        grid-template-areas:
+        "logo_h h2_h"
+        "nav_h nav_h";
+        grid-template-columns:50% 50%;
+        grid-template-rows: auto auto;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        margin-top: 25px;
+    }
+    .main_shop{
+        grid-area: main_shop;
+        display: grid;
+        grid-template-areas: 
+        "img_shop_1 div_shop_1"
+        "img_shop_2 div_shop_2";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+    }
+    .imagen_shop_1{grid-area: img_shop_1;}
+    .imagen_shop_2{grid-area: img_shop_2;}
+    .imagen_shop_1,.imagen_shop_2{
+        width: 90%;
+        margin-bottom: 15%;
+        margin-top: 15%;
+    }
+    .contenido_shop_1{
+        grid-area: div_shop_1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contenido_shop_2{
+        grid-area: div_shop_2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .parrafos_shop{
+        font-family: 'Old Standard TT', serif;
+        font-weight: bold;
+        font-size: 30px;
+        color: #491f53;
+    }
+    .enlace_main_shop{
+        font-family: 'Old Standard TT', serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: #491f53;
+        font-style: italic;
+    }
+    .footer_shop{grid-area: footer_shop;}
+    .texto_footer_shop,.parrafo_footer_shop,.enlace_footer_shop{
+        color:#491f53;
+        font-size: 10px;
+        font-family: 'Old Standard TT', serif;
+    }
+    /*fin SHOP*/
+}
